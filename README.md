@@ -1,20 +1,21 @@
 ## Overview
 
-This repository provides an end-to-end MATLAB pipeline for classifying neuronal cell types in mouse primary visual cortex (V1) based on their responses to visual stimuli. The workflow is designed to operate within the **Scanbox** imaging environment and integrates multiple stages of calcium imaging data processing, stimulus alignment, feature extraction, and classification. Both population-level summaries and single-cell analyses are supported.
+This repository provides an end-to-end MATLAB pipeline for classifying neuronal cell types in mouse primary visual cortex (V1) based on their responses to visual stimuli. The workflow is designed to operate within the **Scanbox** 2-photon imaging environment and integrates calcium imaging data processing, stimulus alignment, feature extraction, and classification. Population-level summaries, single-cell analyses, and cross-cell type comparisons are supported.
 
 ![plot](https://github.com/ryan-gorzek/celltype-tuning-V1/blob/main/plots/celltype.png)
 ## Features
 
 * Automated loading of calcium imaging, stimulus, quadrature, and eye-tracking data.
 * Construction of MATLAB structure arrays linking neural activity to stimulus presentation.
-* Cell filtering based on responsiveness (ON/OFF domain criteria, SNR thresholds).
-* Population-level visualization:
-  * Orientation, spatial frequency, direction selectivity, temporal frequency, contrast, and size tuning histograms.
-  * Contextual modulation (center/surround, cross/iso).
-  * Stationary vs. running tuning curves.
+* Cell-wise filtering based on responsiveness (ON/OFF domain criteria, SNR thresholds).
+* Population-level visualizations:
+  * Spatial receptive fields (ON/OFF kernel centers) vs. visual stimulus screen location.
+  * SNR, orientation, spatial frequency, direction selectivity, temporal frequency, contrast, and size tuning histograms.
+  * Context modulation (center/surround, cross/iso) scatterplots.
+  * Stationary vs. running orientation tuning curves.
 * Single-cell characterization:
   * ON/OFF receptive field kernels.
-  * Multi-stimulus tuning surfaces (orientation, spatial frequency, contrast, size).
+  * Multi-stimulus tuning kernels (orientation, spatial frequency, contrast, size).
   * Context-modulated PSTHs.
 * Dimensionality reduction (PCA, t-SNE) on response features.
 * Cell type classification (e.g., pyramidal vs. SST interneurons) using discriminant analysis with cross-validation.
