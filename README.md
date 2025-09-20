@@ -1,5 +1,3 @@
-Visual Stimulus Response-Based Cell Type Classification in Mouse V1
-
 ## Overview
 
 This repository provides an end-to-end MATLAB pipeline for classifying neuronal cell types in mouse primary visual cortex (V1) based on their responses to visual stimuli. The workflow is designed to operate within the **Scanbox** imaging environment and integrates multiple stages of calcium imaging data processing, stimulus alignment, feature extraction, and classification. Both population-level summaries and single-cell analyses are supported.
@@ -8,7 +6,7 @@ This repository provides an end-to-end MATLAB pipeline for classifying neuronal 
 ## Features
 
 * Automated loading of calcium imaging, stimulus, quadrature, and eye-tracking data.
-* Construction of experiment structures linking neuronal activity to stimulus presentation.
+* Construction of MATLAB structure arrays linking neural activity to stimulus presentation.
 * Cell filtering based on responsiveness (ON/OFF domain criteria, SNR thresholds).
 * Population-level visualization:
   * Orientation, spatial frequency, direction selectivity, temporal frequency, contrast, and size tuning histograms.
