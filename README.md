@@ -41,10 +41,10 @@ This repository provides an end-to-end MATLAB pipeline for classifying neuronal 
 
 The pipeline requires:
 
-* **Calcium imaging data** (`.sbx` files processed with suite2p and extracted signals).
-* **Stimulus timing and parameters**.
-* **Quadrature signals** for running state.
-* **Eye-tracking video data**.
+* Calcium imaging data (`.sbx` files processed with suite2p and extracted signals).
+* Stimulus timing and parameters.
+* Quadrature signals for running state.
+* Eye-tracking video data.
 
 ## Output
 
