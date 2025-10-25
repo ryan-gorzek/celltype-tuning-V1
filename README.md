@@ -52,3 +52,7 @@ The pipeline requires:
 * Single-cell response kernels and tuning curves.
 * Dimensionality reduction plots (PCA, t-SNE).
 * Cross-validated classifier performance metrics (observed vs. shuffled distributions).
+
+## License
+
+MIT. See `LICENSE`.
